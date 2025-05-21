@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \scshape Gregory Laurent} \\ \vspace{1pt}
+  \small Reno, Nevada\\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +49 176 34232432 ~ 
+  {\raisebox{-0.2\height}\faEnvelope\ \underline{todo@gmail.com}} ~ 
+  {\raisebox{-0.2\height}\faGithub\ \underline{github.com/todo}}
+  \vspace{-8pt}
+\end{center}
+
+\section{Experience}
+\vspace{5pt}
+\resumeSubHeadingListStart
+
+% ExperienceBlockStart
+
+\resumeSubheading
+{Senior Site Reliability Engineer}{Mar 2023 -- Feb 2025}
+{Google Germany}{Berlin, Germany}
+\resumeItemListStart
+\resumeItem{Architected and optimized \textbf{Azure} and \textbf{Kubernetes} infrastructure at scale}
+\resumeItem{Implemented robust CI/CD pipelines with \textbf{Azure DevOps} and containerized workloads}
+\resumeItem{Enhanced system reliability using server configuration technologies}
+\resumeItem{Developed automation frameworks using configuration as code tools}
+\resumeItem{Served as Technical Lead for company’s migration initiative}
+\resumeItem{Engineered components into modular, reusable infrastructure patterns}
+\resumeItem{Streamlined deployment processes and monitored application health}
+\resumeItemListEnd
+\vspace{5pt}
+
+\resumeSubheading
+{Senior Solutions Architect}{Sep 2021 -- Sep 2022}
+{Microsoft Germany}{Berlin, Germany}
+\resumeItemListStart
+\resumeItem{Designed and maintained \textbf{API Gateway} solutions for \textbf{European Space Agency (ESA)} satellite systems}
+\resumeItem{Built and managed continuous deployment workflows with \textbf{Azure DevOps} and \textbf{GitLab CI}}
+\resumeItem{Developed infrastructure scripts using \textbf{Azure Resource Manager} templates}
+\resumeItem{Leveraged \textbf{Azure Artifacts} for package management and secure dependency integration}
+\resumeItem{Designed \textbf{high availability} and \textbf{compliance solutions} using \textbf{Azure} and \textbf{Prometheus}}
+\resumeItemListEnd
+\vspace{5pt}
+
+\resumeSubheading
+{Technical Solutions Architect}{June 2017 -- Feb 2021}
+{Microsoft Luxembourg}{Luxembourg}
+\resumeItemListStart
+\resumeItem{Architected Data Warehouse and Analytics Platform with \textbf{Azure} cloud solutions}
+\resumeItem{Led cross-functional team of 6 engineers focused on Data and ML Operations}
+\resumeItem{Built data streaming architecture using \textbf{Azure Event Hubs} and \textbf{Blob Storage}}
+\resumeItem{Engineered ETL workflows using \textbf{Azure Data Factory} to transform and prepare data for analytics consumption}
+\resumeItemListEnd
+\vspace{5pt}
+
+\resumeSubheading
+{Data Engineer}{2016 -- 2017}
+{Other Job Germany}{Germany}
+\resumeItemListStart
+\resumeItem{Worked on data engineering projects and contributed to data pipeline development}
+\resumeItemListEnd
+\vspace{5pt}
+
+% ExperienceBlockEnd
+
+\resumeSubHeadingListEnd
+
+\section{Personal Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://prepare.sh}{\textbf{prepare.sh}}}{50K monthly visits. Written in Go + Azure}
+\resumeSubHeadingListEnd
+
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Certified Kubernetes Administrator (CKA)}}
+\resumeItem{\textbf{Google Professional Cloud Architect}}
+\resumeItem{\textbf{AWS Certified DevOps Engineer Professional}}
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\tiny\textbf{Tech Stack:} \\
+\tiny{AWS, Azure, GCP, Terraform, Ansible, Gitlab, Github Actions, Jenkins, Python, PHP, SQL, ELK, Grafana, Loki, OpenTelemetry, Jaeger, Docker, Kubernetes, ArgoCD, GraphQL, Artifactory, Velero, SonarQube, Trivy, Git, Packer, Helm, Kafka, Golang, Istio.}
+
+\end{document}
