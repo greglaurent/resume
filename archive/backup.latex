@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -90,7 +90,7 @@
 \begin{center}
   {\LARGE \scshape Gregory Laurent} \\ \vspace{1pt}
   \small Reno, Nevada\\ \vspace{1pt}
-  \small \raisebox{-0.1\height}\faPhone\ +49 176 34232432 ~ 
+  \small \raisebox{-0.1\height}\faPhone\ +1 TODO~ 
   {\raisebox{-0.2\height}\faEnvelope\ \underline{todo@gmail.com}} ~ 
   {\raisebox{-0.2\height}\faGithub\ \underline{github.com/todo}}
   \vspace{-8pt}
@@ -167,5 +167,6 @@
 \vspace{5pt}
 \tiny\textbf{Tech Stack:} \\
 \tiny{AWS, Azure, GCP, Terraform, Ansible, Gitlab, Github Actions, Jenkins, Python, PHP, SQL, ELK, Grafana, Loki, OpenTelemetry, Jaeger, Docker, Kubernetes, ArgoCD, GraphQL, Artifactory, Velero, SonarQube, Trivy, Git, Packer, Helm, Kafka, Golang, Istio.}
+
 
 \end{document}
