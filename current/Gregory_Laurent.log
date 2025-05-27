@@ -1086,22 +1086,22 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 t line 61.
 (sections/psheader.tex
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 8.
+(Font)              scaled to size 12.0pt on input line 6.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+
 smcp;mapping=tex-text;" at 12.0pt
  -> LinLibertine_R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 36.0pt on input line 9.
+(Font)              scaled to size 36.0pt on input line 7.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+
 smcp;mapping=tex-text;" at 36.0pt
  -> LinLibertine_R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 15.0pt on input line 10.
+(Font)              scaled to size 15.0pt on input line 8.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+
 smcp;mapping=tex-text;" at 15.0pt
  -> LinLibertine_R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 6.0pt on input line 11.
+(Font)              scaled to size 6.0pt on input line 9.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+
 smcp;mapping=tex-text;" at 6.0pt
  -> LinLibertine_R.otf
@@ -1215,4 +1215,4 @@ Overfull \hbox (9.99998pt too wide) in paragraph at lines 127--170
  []
 
 [2] (Gregory_Laurent.aux) )
-Output written on Gregory_Laurent.xdv (2 pages, 51952 bytes).
+Output written on Gregory_Laurent.xdv (2 pages, 51872 bytes).
