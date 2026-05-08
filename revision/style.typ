@@ -1,5 +1,3 @@
-#import "lookup.typ": get-content
-
 #let set-style(
   text-0-val: rgb("#16161D"),
   text-1-val: rgb("#6C757D"),
@@ -24,15 +22,4 @@
   cv: set-style(),
 )
 
-#let formats = (
-  us: (content, data) => {
-    import "formats/us.typ": apply
-    apply(content, stylesheet.us, data)
-  },
-  cv: (content, data) => {
-    import "formats/cv.typ": apply
-    apply(content, stylesheet.cv, data)
-  },
-)
-
-#let get-format(region) = formats.at(region)
+#let get-style(region) = stylesheet.at(region)

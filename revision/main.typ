@@ -1,9 +1,12 @@
 // "us", "cv"
-#let region = "us"
-#import "style.typ": get-format
+#let region = "cv"
+
 #import "lookup.typ": get-content
+#import "style.typ": get-style
+#import "formats.typ": get-apply
 
 #let data = get-content(region)
-#let style = get-format(region)
+#let style = get-style(region)
+#let apply = get-apply(region)
 
-#show: doc => style(doc, data)
+#show: doc => apply(doc, style, data)

@@ -1,3 +1,5 @@
+#import "content.typ": experience
+
 #let name = (
   first-last: [ Gregory Laurent ],
   first-middle-last: [ Gregory Marc Laurent ],
@@ -29,6 +31,7 @@
   phone: phone-val,
   email: email-val,
   location: location-val,
+  experience: experience,
 )
 
 #let content = (

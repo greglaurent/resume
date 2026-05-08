@@ -1,3 +1,6 @@
+#import "header.typ": build-header
+#import "sections.typ": experience-section
+
 #let apply(content, style, data) = {
   set par(spacing: 1em, leading: 1em, justify: true)
 
@@ -12,11 +15,9 @@
   set page(
     paper: "a4",
     margin: (top: 1cm),
-    header: {
-      data.name
-    },
+    header: build-header(data, style),
   )
 
-
-  content // Return styled content
+  experience-section(data.experience, style)
+  content
 }
