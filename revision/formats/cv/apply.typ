@@ -5,11 +5,11 @@
   set par(spacing: 1em, leading: 1em, justify: true)
 
   set text(
-    font: "Cantarell",
+    font: style.font,
     size: 24pt,
     tracking: 1pt,
     weight: 500,
-    fill: style.text-2,
+    fill: style.color-2,
   )
 
   set page(

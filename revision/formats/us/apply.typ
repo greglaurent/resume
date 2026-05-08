@@ -2,20 +2,26 @@
 #import "sections.typ": experience-section
 
 #let apply(content, style, data) = {
+  set rect(
+    width: 100%,
+    height: 100%,
+    inset: 4pt,
+  )
+
   set par(spacing: 1em, leading: 1em, justify: true)
 
   set text(
-    font: "IBM Plex Sans",
+    font: style.font,
     size: 12pt,
     tracking: 1pt,
     weight: 500,
-    fill: style.text-0,
+    fill: style.color-0,
   )
 
   set page(
     paper: "us-letter",
-    margin: (top: 5cm),
-    header: build-header(data, style),
+    margin: (left: 1in, top: 0.75in, right: 1in, bottom: 1in),
+    header: rect(fill: aqua)[ #build-header(data, style) ],
   )
 
   experience-section(data.experience, style)

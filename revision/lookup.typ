@@ -1,4 +1,4 @@
-#import "content.typ": experience
+#import "content/experience.typ": experience
 
 #let name = (
   first-last: [ Gregory Laurent ],
@@ -12,8 +12,8 @@
 )
 
 #let email = (
-  business: [ greg@abmac.io ],
-  personal: [ gregory.m.laurent@gmail.com ],
+  business: [ greg\@abmac.io ],
+  personal: [ gregory.m.laurent\@gmail.com ],
 )
 
 #let location = (
