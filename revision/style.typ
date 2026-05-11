@@ -13,7 +13,7 @@
   subtitle: (size: 1.2em, tracking: 0.75pt, weight: "regular", smallcaps: true),
   contact: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
   body: (size: 1em, leading: 0.75em, tracking: 0.5pt, weight: "regular"),
-  bullet: (size: 0.9em, tracking: 0.5pt, weight: "regular"),
+  bullet: (size: 0.95em, tracking: 0.25pt, weight: "regular"),
   caption: (size: 0.75em, tracking: 0.5pt, leading: 0.5em, weight: "regular", smallcaps: false),
 )
 
@@ -21,7 +21,7 @@
   text: (font: "EB Garamond", size: 12pt, tracking: 1pt, weight: 500),
   page: (paper: "us-letter", margin: (left: 1in, top: 0.75in, right: 1in, bottom: 1in)),
   par: (spacing: 1em, leading: 1em, justify: true),
-  list: (tight: true, leading: 0.5em, spacing: 0.75em),
+  list: (tight: true, leading: 0.5em, spacing: 1em),
 )
 
 // Note: all three override params are partial dicts merged with their *-defaults counterparts.

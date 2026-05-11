@@ -41,11 +41,12 @@
 }
 
 // Renders a list of bullet items. Typography from bullet token; layout from doc.list.
-#let render-bullets(items, style) = {
-  let b = style.global.layout.bullet
+// Named overrides (e.g. size: 0.8em) are merged into the bullet token at the call site.
+#let render-bullets(items, style, ..ov) = {
+  let b = style.global.layout.bullet + ov.named()
   set text(size: b.size, tracking: b.tracking, weight: b.weight)
   for item in items [
-    - #(style.layout.bullet)[#item]
+    - #(style.layout.bullet)(..ov.named())[#item]
   ]
 }
 
