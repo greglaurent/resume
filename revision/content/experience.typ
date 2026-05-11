@@ -19,7 +19,7 @@
     role: [Product Manager],
     start: [May 2022],
     end: [Dec 2023],
-    summary: [Platform product manager for PROS B2B Data Management platform, leading modernization of transformational data infrastructure company-wide.],
+    summary: [Technical product manager for PROS B2B Data Management platform, leading modernization of company-wide data infrastructure.],
     bullets: (
       [Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
       [Owned platform roadmap and drove cross-product integration strategy, coordinating resources across engineering and product teams.],
