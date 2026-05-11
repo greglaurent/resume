@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": fa-mobile-screen-button, fa-location-dot, fa-envelope
+#import "@preview/fontawesome:0.5.0": fa-envelope, fa-location-dot, fa-mobile-screen-button
 #let fa-font = "Font Awesome 7 Free Solid"
 
 #let render-masthead(data, style) = {
@@ -15,6 +15,5 @@
       (style.layout.contact)[#text(baseline: 0.15em, fa-envelope(font: fa-font, solid: true)) #data.email],
     ),
   )
-  v(0.15em)
   line(length: 100%, stroke: 0.5pt + style.global.colors.accent)
 }

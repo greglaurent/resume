@@ -4,7 +4,7 @@
   (style.layout.h2)[Experience]
   for entry in entries {
     grid(
-      columns: (40%, 1fr),
+      columns: (50%, 1fr),
       column-gutter: 1em,
       row-gutter: 0.5em,
       (style.layout.h3)[#entry.role], (style.layout.h3)[#entry.start — #entry.end],

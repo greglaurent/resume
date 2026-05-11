@@ -38,7 +38,7 @@
     summary: [Senior member of the small, product-focused SafePoint team dedicated to supporting all business critical applications.],
     bullets: (
       [Modernized critical financial platform (tracks \$1B transactions/day) with zero downtime by researching, designing, and implementing a solution to re-architect core transaction systems.],
-      [Worked closely with all stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
+      [Worked closely with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
       [Coordinated with internal and external stakeholders on a customer onboarding pipeline. Customer Support increased productivity by over 60% with no staff increases.],
     ),
   ),
@@ -53,11 +53,11 @@
       [Key developer and researcher on Phase I and II solicitations using OCR to digitize and trace schematics for safety procedures and maintenance on high-pressure systems.],
       [Led and mentored team of developers across multiple SBIR projects, training junior engineers on secure systems integration and DoD software requirements.],
       [Individually generated over \$1M in revenue (2016-2018) with award-winning research proposals.
-#list(
-  [Phase I and II awarded SBIR solicitations to modernize global Naval Fuel Depot Asset Management business processes. Successful productization of a first-of-its-kind mobile application to integrate with IBM Maximo.],
-  [Phase I awarded SBIR solicitation to support modern Naval galley kitchens with a mobile application for forms, guides, and on-site digital training.],
-  [Primarily authored and provided technical product guidance on a Phase I awarded SBIR solicitation for the Naval health and wellness information ashore and afloat.],
-)],
+        #list(
+          [Phase I and II awarded SBIR solicitations to modernize global Naval Fuel Depot Asset Management business processes. Successful productization of a first-of-its-kind mobile application to integrate with IBM Maximo.],
+          [Phase I awarded SBIR solicitation to support modern Naval galley kitchens with a mobile application for forms, guides, and on-site digital training.],
+          [Primarily authored and provided technical product guidance on a Phase I awarded SBIR solicitation for the Naval health and wellness information ashore and afloat.],
+        )],
     ),
   ),
 )
