@@ -11,7 +11,7 @@
 
     block(
       below: 1em,
-      par(leading: style.global.layout.entry-intro.leading, (style.layout.entry-intro)[#entry.summary]),
+      (style.layout.body)(size: 0.9em, leading: 0.5em, emph: true)[#entry.summary],
     )
 
     for bullet in entry.bullets [

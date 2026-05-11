@@ -1,4 +1,4 @@
-#import "utils.typ": make-doc-list, make-doc-page, make-doc-par, make-doc-text, make-emph, make-heading, make-text
+#import "utils.typ": make-doc-list, make-doc-page, make-doc-par, make-doc-text, make-heading, make-text
 
 #let color-defaults = (
   primary: rgb("#16161D"),
@@ -12,10 +12,8 @@
   h3: (size: 1.1em, tracking: 0.5pt, weight: "bold", smallcaps: true, numbering: none, above: 0.5em, below: 0.5em),
   subtitle: (size: 1.1em, tracking: 1pt, weight: "regular", smallcaps: true),
   contact: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: true),
-  body: (size: 1em, leading: 0.5em, tracking: 1pt, weight: "regular"),
-  summary: (size: 1em, leading: 0.5em, tracking: 0pt, weight: "regular", smallcaps: false),
+  body: (size: 1em, leading: 0em, tracking: 1pt, weight: "regular"),
   caption: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
-  entry-intro: (size: 0.9em, leading: 0.5em, tracking: 1pt, weight: "regular"),
   bullet: (size: 0.9em, tracking: 0.5pt, weight: "regular"),
 )
 
@@ -54,9 +52,7 @@
       subtitle: make-text(g.layout.subtitle),
       contact: make-text(g.layout.contact),
       body: make-text(g.layout.body),
-      summary: make-text(g.layout.summary),
       caption: make-text(g.layout.caption),
-      entry-intro: make-emph(g.layout.entry-intro),
       dot-divider: (..ov) => text(
         sym.circle.filled,
         fill: ov.named().at("fill", default: g.colors.accent),

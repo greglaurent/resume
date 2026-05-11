@@ -8,13 +8,13 @@
     ..if "font" in cfg { (font: cfg.font) } else { (:) },
     ..if "fill" in cfg { (fill: cfg.fill) } else { (:) },
   )
-  if cfg.at("smallcaps", default: false) { smallcaps(body) } else { body }
+  let result = if cfg.at("smallcaps", default: false) { smallcaps(body) } else { body }
+  let result = if cfg.at("emph", default: false) { emph(result) } else { result }
+  if "leading" in cfg { { set par(leading: cfg.leading); result } } else { result }
 }
 
-// Typography callable factories
+// Typography callable factory
 #let make-text(token) = (body, ..ov) => style-text(body, token + ov.named())
-
-#let make-emph(token) = (body, ..ov) => emph(style-text(body, token + ov.named()))
 
 #let make-heading(token, level) = (body, ..ov) => {
   let cfg = token + ov.named()
