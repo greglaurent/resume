@@ -13,3 +13,12 @@
   )
 }
 
+#let set-heading(body, level) = heading(level: level, body)
+
+#let style-text(body, cfg) = {
+  if cfg.at("smallcaps", default: false) {
+    set-smallcaps(body, cfg.size, cfg.tracking, cfg.weight)
+  } else {
+    set-text(body, cfg.size, cfg.tracking, cfg.weight)
+  }
+}

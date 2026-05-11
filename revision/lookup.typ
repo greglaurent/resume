@@ -1,6 +1,10 @@
-#import "content/header.typ": email, location, name, phone
+#import "content/masthead.typ": email, location, name, phone
 #import "content/experience.typ": experience
+#import "content/education.typ": education
 #import "content/summary.typ": summary
+#import "content/solution-driven.typ": solution-driven
+#import "content/holistic-approach.typ": holistic-approach
+#import "content/clearance.typ": clearance
 
 #let set-content(
   name-val: name.first-initial-last,
@@ -14,6 +18,10 @@
   location: location-val,
   summary: summary,
   experience: experience,
+  education: education,
+  solution-driven: solution-driven,
+  holistic-approach: holistic-approach,
+  clearance: clearance,
 )
 
 #let content = (
