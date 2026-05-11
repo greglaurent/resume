@@ -3,6 +3,6 @@
   stack(
     spacing: 0.5em,
     (style.layout.h3)[#data.level • #data.year],
-    [#data.status],
+    (style.layout.body)[#data.status],
   )
 }

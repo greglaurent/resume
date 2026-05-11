@@ -4,8 +4,8 @@
     stack(
       spacing: 0.5em,
       (style.layout.h3)[#entry.school • #entry.year],
-      [#entry.degree],
-      [#entry.major],
+      (style.layout.body)[#entry.degree],
+      (style.layout.bullet)[#entry.major],
     )
   }
 }

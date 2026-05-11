@@ -6,17 +6,16 @@
       column-gutter: 1em,
       row-gutter: 0.5em,
       (style.layout.h3)[#entry.role], (style.layout.h3)[#entry.start — #entry.end],
-      (style.layout.body)(size: 0.9em)[#entry.company], (style.layout.body)[#entry.location],
+      (style.layout.body)[#entry.company], (style.layout.body)[#entry.location],
     )
 
     block(
       below: 1em,
-      (style.layout.body)(size: 0.9em, emph: true, leading: 0.5em)[#entry.summary],
+      (style.layout.bullet)(emph: true, leading: 0.5em)[#entry.summary],
     )
 
     for bullet in entry.bullets [
-      - #(style.layout.bullet)[#bullet]
+      - #(style.layout.bullet(leading: 5em)[#bullet]
     ]
-    v(0.5em)
   }
 }

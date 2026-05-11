@@ -17,12 +17,11 @@
   render-masthead(data, style)
   render-summary(data.summary, style)
   render-experience(data.experience, style)
-  //grid(
-  //  columns: (1fr, 1fr),
-  //  column-gutter: 1em,
-  //  render-solution-driven(data.solution-driven, style),
-  //  render-holistic-approach(data.holistic-approach, style),
-  //)
+  grid(
+    columns: (1fr, 1fr),
+    column-gutter: 1em,
+    render-solution-driven(data.solution-driven, style), render-holistic-approach(data.holistic-approach, style),
+  )
   grid(
     columns: (1fr, 1fr),
     column-gutter: 1em,
