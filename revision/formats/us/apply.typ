@@ -14,7 +14,7 @@
   )
 
   set par(spacing: 1em, leading: 1em, justify: true)
-  set list(tight: style.global.list.tight)
+  set list(tight: style.global.list.tight, spacing: style.global.list.spacing)
   show list.item: it => {
     set par(leading: style.global.list.leading)
     it

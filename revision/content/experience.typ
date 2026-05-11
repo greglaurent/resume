@@ -53,10 +53,11 @@
       [Key developer and researcher on Phase I and II solicitations using OCR to digitize and trace schematics for safety procedures and maintenance on high-pressure systems.],
       [Specialized in designing and building modern solutions that integrate with secure legacy systems.],
       [Individually generated over \$1M in revenue (2016-2018) with award-winning research proposals.
-        - Phase I and II awarded SBIR solicitations to modernize global Naval Fuel Depot Asset Management business processes. Successful productization of a first-of-its-kind mobile application to integrate with IBM Maximo.
-        - Phase I awarded SBIR solicitation to support modern Naval galley kitchens with a mobile application for forms, guides, and on-site digital training.
-        - Primarily authored and provided technical product guidance on a Phase I awarded SBIR solicitation for the Naval health and wellness information ashore and afloat.
-      ],
+#list(
+  [Phase I and II awarded SBIR solicitations to modernize global Naval Fuel Depot Asset Management business processes. Successful productization of a first-of-its-kind mobile application to integrate with IBM Maximo.],
+  [Phase I awarded SBIR solicitation to support modern Naval galley kitchens with a mobile application for forms, guides, and on-site digital training.],
+  [Primarily authored and provided technical product guidance on a Phase I awarded SBIR solicitation for the Naval health and wellness information ashore and afloat.],
+)],
     ),
   ),
 )

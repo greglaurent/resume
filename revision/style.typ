@@ -24,9 +24,9 @@
   },
   caption: (body, ..overrides) => style-text(body, global.caption + overrides.named()),
   dates: (body, ..overrides) => style-text(body, global.heading_3 + overrides.named()),
-  summary: (body, ..overrides) => par(
-    leading: 0.5em,
-    emph(style-text(body, global.body + (size: 0.9em) + overrides.named())),
+  summary: (body, ..overrides) => block(
+    below: 1em,
+    par(leading: 0.5em, emph(style-text(body, global.body + (size: 0.9em) + overrides.named()))),
   ),
 )
 
@@ -93,9 +93,9 @@
   subtitle: (size: 1.2em, tracking: 1pt, weight: "regular"),
   body: (size: 1em, tracking: 1pt, weight: "regular"),
   summary: (size: 1em, tracking: 0pt, weight: "regular", smallcaps: false),
-  caption: (size: 0.9em, tracking: 0.5pt, weight: "regular", smallcaps: false),
+  caption: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
   bullet: (size: 0.9em, tracking: 0.5pt, weight: "regular"),
-  list: (tight: true, leading: 0.5em),
+  list: (tight: true, leading: 0.5em, spacing: 0.5em),
 ) = {
   let global = (
     font: font,
