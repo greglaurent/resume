@@ -7,9 +7,10 @@
     end: [Current],
     summary: [Founded consulting practice focused on technical leadership and mentorship for engineering and product teams. Guide clients through technical challenges, feasibility analysis, process optimization, and product delivery.],
     bullets: (
-      [Led and mentored cross-functional teams of engineers and product managers across multiple client engagements],
-      [Trained new product managers on governance, estimation, and planning processes],
-      [Provided technical and strategic guidance to clients, resulting in \$550K additional revenue for one agency in first year],
+      [Conducted R&D feasibility studies and proof-of-concept development for emerging technologies, including subterranean leak detection systems and novel marketing attribution models with IP/patent strategy support.],
+      [Defined product strategy and roadmaps for clients bringing technical products to market, translating business objectives into development plans and go-to-market approaches.],
+      [Guided agency through developing new discovery methodology for early-phase technical research, enabling them to land larger, more complex projects and generate \$550K in additional first-year revenue.],
+      [Led and mentored cross-functional engineering and product teams across client engagements, training product managers on governance, estimation, and planning processes.],
     ),
   ),
   (
@@ -18,9 +19,10 @@
     role: [Product Manager],
     start: [May 2022],
     end: [Dec 2023],
-    summary: [Platform technical product manager of PROS B2B Data Management to modernize a transformational data platform company-wide.],
+    summary: [Platform product manager for PROS B2B Data Management platform, leading modernization of transformational data infrastructure company-wide.],
     bullets: (
-      [Led a team to turn around a multi-year, stalled project to its first production deployment while maintaining long-term roadmaps and coordinating company-wide platform integration resources.],
+      [Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
+      [Owned platform roadmap and drove cross-product integration strategy, coordinating resources across engineering and product teams.],
       [Piloted targeted cost reduction projects to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands.],
       [Improved a customer data quality report, resulting in a 40% reduction in related support tickets.],
       [Collaborated with VP of Product to redesign product management processes, establishing company-wide standards for planning, estimation, and governance.],
