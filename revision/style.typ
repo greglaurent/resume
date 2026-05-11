@@ -7,11 +7,11 @@
 )
 
 #let layout-defaults = (
-  h1: (size: 2em, tracking: 1pt, weight: "regular", smallcaps: true, numbering: none, above: 0pt, below: 0.25em),
+  h1: (size: 2em, tracking: 1pt, weight: "bold", smallcaps: true, numbering: none, above: 0pt, below: 0.25em),
   h2: (size: 1.2em, tracking: 1pt, weight: "bold", smallcaps: true, numbering: none, above: 1em, below: 1em),
   h3: (size: 1.1em, tracking: 0.5pt, weight: "bold", smallcaps: true, numbering: none, above: 0.5em, below: 0.5em),
   subtitle: (size: 1.2em, tracking: 0.75pt, weight: "regular", smallcaps: true),
-  contact: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: true),
+  contact: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
   body: (size: 1em, leading: 1em, tracking: 0.5pt, weight: "regular"),
   caption: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
   bullet: (size: 0.9em, tracking: 0.5pt, weight: "regular"),
