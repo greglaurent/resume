@@ -1,3 +1,5 @@
+#import "../../utils.typ": render-bullets
+
 #let render-experience(entries, style) = {
   (style.layout.h2)[Experience]
   for entry in entries {
@@ -11,11 +13,9 @@
 
     block(
       below: 1em,
-      (style.layout.bullet)(emph: true, leading: 0.5em)[#entry.summary],
+      (style.layout.body)(emph: true, leading: 0.5em)[#entry.summary],
     )
 
-    for bullet in entry.bullets [
-      - #(style.layout.bullet(leading: 5em)[#bullet]
-    ]
+    render-bullets(entry.bullets, style)
   }
 }

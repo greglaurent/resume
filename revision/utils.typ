@@ -40,6 +40,15 @@
   c
 }
 
+// Renders a list of bullet items. Typography from bullet token; layout from doc.list.
+#let render-bullets(items, style) = {
+  let b = style.global.layout.bullet
+  set text(size: b.size, tracking: b.tracking, weight: b.weight)
+  for item in items [
+    - #(style.layout.bullet)[#item]
+  ]
+}
+
 // Cannot use set list(..cfg) like the other doc factories because `list` has no `leading`
 // parameter — leading is applied per-item via par instead.
 #let make-doc-list(base) = (c, ..ov) => {
