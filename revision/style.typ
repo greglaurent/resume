@@ -6,6 +6,7 @@
     block(above: cfg.above, below: cfg.below, set-heading(style-text(body, cfg), 1))
   },
   subtitle: (body, ..overrides) => style-text(body, global.subtitle + overrides.named()),
+  contact: (body, ..overrides) => style-text(body, global.contact + overrides.named()),
   dot-divider: text(sym.circle.filled, fill: global.color-2),
 )
 
@@ -90,7 +91,8 @@
     above: 0.5em,
     below: 0.5em,
   ),
-  subtitle: (size: 1.2em, tracking: 1pt, weight: "regular"),
+  subtitle: (size: 1.1em, tracking: 1pt, weight: "regular", smallcaps: true),
+  contact: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: true),
   body: (size: 1em, tracking: 1pt, weight: "regular"),
   summary: (size: 1em, tracking: 0pt, weight: "regular", smallcaps: false),
   caption: (size: 1em, tracking: 0.5pt, weight: "regular", smallcaps: false),
@@ -106,6 +108,7 @@
     heading_2: heading_2,
     heading_3: heading_3,
     subtitle: subtitle,
+    contact: contact,
     body: body,
     summary: summary,
     caption: caption,

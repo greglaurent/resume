@@ -2,13 +2,14 @@
   stack(
     spacing: 0.75em,
     (style.masthead.heading)(data.name),
+    (style.masthead.subtitle)(data.subtitle),
     grid(
       columns: (1fr, 1fr, 1fr),
       align: (left, center, right),
       gutter: 0.25em,
-      (style.masthead.subtitle)(data.phone),
-      (style.masthead.subtitle)(data.location),
-      (style.masthead.subtitle)(data.email),
+      (style.masthead.contact)(data.phone),
+      (style.masthead.contact)(data.location),
+      (style.masthead.contact)(data.email),
     ),
   )
   v(0.15em)

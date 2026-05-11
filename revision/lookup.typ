@@ -1,4 +1,4 @@
-#import "content/masthead.typ": email, location, name, phone
+#import "content/masthead.typ": email, location, name, phone, subtitle
 #import "content/experience.typ": experience
 #import "content/education.typ": education
 #import "content/summary.typ": summary
@@ -13,6 +13,7 @@
   location-val: location.city-state,
 ) = (
   name: name-val,
+  subtitle: subtitle,
   phone: phone-val,
   email: email-val,
   location: location-val,

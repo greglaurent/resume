@@ -1,3 +1,5 @@
+#let subtitle = [Technical Leadership #sym.bullet Platform Engineering #sym.bullet Product Strategy]
+
 #let name = (
   first-last: [ Gregory Laurent ],
   first-middle-last: [ Gregory Marc Laurent ],
