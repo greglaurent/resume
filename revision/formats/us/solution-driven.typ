@@ -1,10 +1,6 @@
 #let render-solution-driven(bullets, style) = {
-  (style.solution-driven.heading)[Solution-driven]
-  set text(
-    size: style.global.bullet.size,
-    tracking: style.global.bullet.tracking,
-    weight: style.global.bullet.weight,
-  )
+  (style.layout.h2)[Solution-driven]
+  set text(..style.global.layout.bullet)
   for bullet in bullets [
     - #bullet
   ]

@@ -1,15 +1,18 @@
 #let render-experience(entries, style) = {
-  (style.experience.heading)[Experience]
+  (style.layout.h2)[Experience]
   for entry in entries {
     grid(
       columns: (40%, 1fr),
       column-gutter: 1em,
       row-gutter: 0.5em,
-      (style.experience.subheading)[#entry.role], (style.experience.dates)[#entry.start — #entry.end],
-      (style.experience.caption)[#entry.company], (style.experience.caption)[#entry.location],
+      (style.layout.h3)[#entry.role], (style.layout.h3)[#entry.start — #entry.end],
+      (style.layout.caption)[#entry.company], (style.layout.caption)[#entry.location],
     )
 
-    (style.experience.summary)[#entry.summary]
+    block(
+      below: 1em,
+      par(leading: style.global.layout.entry-intro.leading, (style.layout.entry-intro)[#entry.summary]),
+    )
 
     for bullet in entry.bullets [
       - #bullet

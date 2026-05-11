@@ -1,8 +1,8 @@
 #let render-clearance(data, style) = {
-  (style.clearance.heading)[Clearance]
+  (style.layout.h2)[Clearance]
   stack(
     spacing: 0.5em,
-    (style.clearance.subheading)[#data.level • #data.year],
+    (style.layout.h3)[#data.level • #data.year],
     [#data.status],
   )
 }

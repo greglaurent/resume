@@ -1,3 +1,3 @@
 #let render-summary(body, style) = {
-  par[ #(style.summary.body)(body) ]
+  par[ #(style.layout.summary)(body) ]
 }
