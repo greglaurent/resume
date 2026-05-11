@@ -2,6 +2,6 @@
   (style.layout.h2)[Holistic Approach]
   set text(..style.global.layout.bullet)
   for bullet in bullets [
-    - #bullet
+    - #(style.layout.bullet)[#bullet]
   ]
 }
