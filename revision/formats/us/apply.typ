@@ -23,7 +23,7 @@
   //  render-solution-driven(data.solution-driven, style), render-holistic-approach(data.holistic-approach, style),
   //)
   grid(
-    columns: (60%, 1fr),
+    columns: (50%, 1fr),
     column-gutter: 1em,
     render-education(data.education, style), render-clearance(data.clearance, style),
   )
