@@ -7,7 +7,7 @@
     end: [Current],
     summary: [Founded consulting practice focused on technical leadership and mentorship for engineering and product teams. Guide clients through technical challenges, feasibility analysis, process optimization, and product delivery.],
     bullets: (
-      [Embedded with client organizations across multiple domains to conduct R&D feasibility studies and proof-of-concept development for emerging technologies, including subterranean leak detection systems and marketing attribution models with IP/patent strategy support.],
+      [Embedded with client organizations across domains to conduct R&D feasibility studies and proof-of-concept development for emerging technologies, including subterranean leak detection systems and marketing attribution models with IP/patent strategy support.],
       [Defined product strategy and roadmaps for clients bringing technical products to market, translating business objectives into development plans and go-to-market approaches.],
       [Guided agency through developing new discovery methodology for early-phase technical research, enabling them to land larger, more complex projects and generate \$550K in additional first-year revenue.],
       [Provided technical and managerial leadership to engineering and product teams across client engagements, driving process improvements and training product managers on governance and planning.],
@@ -38,7 +38,7 @@
     bullets: (
       [Modernized critical financial platform (tracks \$1B transactions/day) with zero downtime by researching, designing, and implementing a solution to re-architect core transaction systems.],
       [Designed and implemented bit-perfect, fully-recoverable synchronization between incompatible databases, removing modernization blockers.],
-      [Worked closely with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
+      [Worked with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
       [Coordinated with internal and external stakeholders on a customer onboarding pipeline. Customer Support increased productivity by over 60% with no staff increases.],
     ),
   ),

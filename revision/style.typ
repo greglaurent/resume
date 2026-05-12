@@ -33,7 +33,7 @@
     weight: "bold",
     smallcaps: true,
     numbering: none,
-    above: 0.75em,
+    above: 1em,
     below: 0em,
     stacking: false,
   ),
