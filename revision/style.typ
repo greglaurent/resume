@@ -23,8 +23,8 @@
     weight: "bold",
     smallcaps: true,
     numbering: none,
-    above: 1.25em,
-    below: 0em,
+    above: 1.5em,
+    below: -0.5em,
     stacking: false,
   ),
   h3: (
