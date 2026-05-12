@@ -14,11 +14,26 @@
 }
 
 // Typography callable factory
-#let make-text(token) = (body, ..ov) => style-text(body, token + ov.named())
+#let make-text(token) = (body, ..ov) => {
+  let cfg = token + ov.named()
+  let content = style-text(body, cfg)
+  if "above" in cfg { v(cfg.above) }
+  content
+  if "below" in cfg { v(cfg.below) }
+}
 
 #let make-heading(token, level) = (body, ..ov) => {
   let cfg = token + ov.named()
-  block(above: cfg.above, below: cfg.below, set-heading(style-text(body, cfg), level, numbering: cfg.numbering))
+  if cfg.at("stacking", default: false) {
+    block(above: cfg.above, below: cfg.below, set-heading(style-text(body, cfg), level, numbering: cfg.numbering))
+  } else {
+    v(cfg.above)
+    {
+      show heading: set block(above: 0pt)
+      set-heading(style-text(body, cfg), level, numbering: cfg.numbering)
+    }
+    v(cfg.below)
+  }
 }
 
 // Document rule callable factories
