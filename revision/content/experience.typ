@@ -2,14 +2,14 @@
   (
     company: [Abstract Machines LLC],
     location: [Reno, NV],
-    role: [Research & Development],
+    role: [Founder & Principal Consultant],
     start: [Nov 2023],
     end: [Current],
     summary: [Founded consulting practice focused on technical leadership and mentorship for engineering and product teams. Guide clients through technical challenges, feasibility analysis, process optimization, and product delivery.],
     bullets: (
-      [Embedded with client organizations across domains to conduct R&D feasibility studies and proof-of-concept development for emerging technologies, including subterranean leak detection systems and marketing attribution models with IP/patent strategy support.],
+      [Guided client through developing new discovery methodology for early-phase technical research, enabling them to land larger, more complex projects and generate #emph[\$550K in additional first-year revenue.]],
+      [Embedded with client organizations across domains to conduct R&D feasibility studies and proof-of-concept development for emerging technologies, including subterranean leak detection systems and marketing attribution models with #emph[IP/patent strategy support.]],
       [Defined product strategy and roadmaps for clients bringing technical products to market, translating business objectives into development plans and go-to-market approaches.],
-      [Guided agency through developing new discovery methodology for early-phase technical research, enabling them to land larger, more complex projects and generate \$550K in additional first-year revenue.],
       [Provided technical and managerial leadership to engineering and product teams across client engagements, driving process improvements and training product managers on governance and planning.],
     ),
   ),
