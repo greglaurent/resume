@@ -38,6 +38,7 @@
     summary: [Senior member of the small, product-focused SafePoint team dedicated to supporting all business critical applications.],
     bullets: (
       [Modernized critical financial platform (tracks \$1B transactions/day) with zero downtime by researching, designing, and implementing a solution to re-architect core transaction systems.],
+      [Designed and implemented bit-perfect, fully-recoverable  synchronization between incompatible databases, removing modernization blockers.],
       [Worked closely with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
       [Coordinated with internal and external stakeholders on a customer onboarding pipeline. Customer Support increased productivity by over 60% with no staff increases.],
     ),
