@@ -1,6 +1,4 @@
-#import "../../utils.typ": render-bullets
-
-#let render-holistic-approach(bullets, style) = {
-  (style.layout.h2)[Holistic Approach]
-  render-bullets(bullets, style)
+#let render-holistic-approach(layout, bullets) = {
+  (layout.h2)[Holistic Approach]
+  for bullet in bullets [- #bullet]
 }

@@ -1,6 +1,4 @@
-#import "../../utils.typ": render-bullets
-
-#let render-solution-driven(bullets, style) = {
-  (style.layout.h2)[Solution-driven]
-  render-bullets(bullets, style)
+#let render-solution-driven(layout, bullets) = {
+  (layout.h2)[Solution-driven]
+  for bullet in bullets [- #bullet]
 }

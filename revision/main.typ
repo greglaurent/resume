@@ -2,11 +2,11 @@
 #let region = "us"
 
 #import "lookup.typ": get-content
-#import "style.typ": get-style
 #import "format.typ": get-apply
+#import "style/template.typ": doc
 
 #let data = get-content(region)
-#let style = get-style(region)
 #let apply = get-apply(region)
 
-#show: doc => apply(doc, style, data)
+#show: doc
+#show: body => apply(body, data)

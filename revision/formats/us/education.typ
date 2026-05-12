@@ -1,8 +1,8 @@
-#let render-education(entries, style) = {
-  (style.layout.h2)[Education]
+#let render-education(layout, entries) = {
+  (layout.h2)[Education]
   for entry in entries {
-    (style.layout.h3)[#entry.school • #entry.year]
-    (style.layout.body)(below: -0.5em)[#entry.degree]
-    (style.layout.bullet)[#entry.major]
+    (layout.h3)[#entry.school • #entry.year]
+    [#entry.degree]
+    (layout.text-2)[#entry.major]
   }
 }

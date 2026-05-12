@@ -1,18 +1,21 @@
-#import "../../utils.typ": render-bullets
+#import "../../style/scale.typ": leading-tight
 
-#let render-experience(entries, style) = {
+#let render-experience(layout, entries) = {
   show grid: set block(above: 0pt)
   show list: set block(below: 0pt)
-  (style.layout.h2)[Experience]
+
+  (layout.h2)[Experience]
   for entry in entries {
     grid(
       columns: (50%, 1fr),
       column-gutter: 1em,
       row-gutter: 0.5em,
-      (style.layout.h3)[#entry.role], (style.layout.h3)[#entry.start — #entry.end],
-      (style.layout.body)[#entry.company], (style.layout.body)[#entry.location],
+      (layout.h3)[#entry.role],
+      align(right, (layout.h3)[#entry.start — #entry.end]),
+      [#entry.company],
+      align(right)[#entry.location],
     )
-    (style.layout.body)(emph: true, leading: 0.5em)[#entry.summary]
-    render-bullets(entry.bullets, style)
+    (layout.text-3)(emph: true, leading: leading-tight)[#entry.summary]
+    for bullet in entry.bullets [- #bullet]
   }
 }
