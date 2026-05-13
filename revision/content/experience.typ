@@ -23,9 +23,9 @@
     bullets: (
       [*Strategic Organizational Leadership:* Owned platform roadmap and drove cross-product integration strategy, working with 5 engineering managers to prioritize resources and align 60+ engineers across platform initiatives.],
       [*Platform Delivery:* Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
-      [*Operational Efficiency :* Piloted targeted cost reduction projects to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands.],
+      [*Operational Efficiency :* Piloted targeted cost reduction to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands.],
       [*Data Quality Standards:* Improved customer data quality reports, resulting in a 40% reduction in related support.],
-      [*Process & Standards Governance:* Collaborated with VP of Product to redesign product management processes, establishing company-wide standards for planning, estimation, and governance.],
+      [*Process Governance:* Collaborated with VP of Product to redesign product management processes, establishing company-wide standards for planning, estimation, and governance.],
     ),
   ),
   (
@@ -36,9 +36,9 @@
     end: [May 2022],
     summary: [Senior member of a product-focused SafePoint team providing technical leadership and supporting all business critical applications.],
     bullets: (
-      [*Platform Modernization R&D:* Modernized a critical financial platform tracking \$1B in transactions daily through research, design, and development to re-architect core transaction systems.],
+      [*Platform Modernization R&D:* Modernized critical financial platforms tracking \$1B in transactions daily through research, design, and development to re-architect core systems.],
       [*Systems Innovation:* Designed and implemented bit-perfect, fully-recoverable synchronization between incompatible databases, removing modernization blockers.],
-      [*Process-driven Impacts:* Coordinated with internal and external stakeholders to improve customer onboarding. Customer Support increased productivity by over 60% with no staff increases.],
+      [*Process-driven Impacts:* Coordinated with stakeholders to improve customer onboarding. Customer Support increased productivity by over 60% with no staff increases.],
       [*Risk Management:* Partnered with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
     ),
   ),
