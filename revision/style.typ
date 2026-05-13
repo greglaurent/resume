@@ -106,6 +106,17 @@
       color-2: g.colors.color-2,
       h1: h1, h2: h2, h3: h3,
       text-5: t5, text-4: t4, text-3: t3, text-2: t2, text-1: t1,
+      // Token cfg dicts — for render files to build per-file callables, e.g.
+      //   #import "../../utils.typ": make-heading
+      //   let h3-medium = make-heading(layout.tokens.h3 + (weight: 500), 3)
+      tokens: l,
+      // Resolved per-region spacing/leading/margins — render files use these
+      // instead of importing from scale.typ, so the layout parameter is the
+      // single dependency.
+      spacing: g.spacing,
+      leading: g.leading,
+      margins: g.margins,
+      cap-em:  g.cap-em,
       icons: (
         font: "Font Awesome 7 Free Solid",
         envelope: fa-envelope,

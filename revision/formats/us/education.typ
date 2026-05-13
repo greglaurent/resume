@@ -2,7 +2,7 @@
   (layout.h2)[Education]
   for entry in entries {
     (layout.h3)[#entry.school • #entry.year]
-    [#entry.degree]
-    (layout.text-2)[#entry.major]
+    (layout.text-4)[#entry.degree]
+    (layout.text-3)[#entry.major]
   }
 }

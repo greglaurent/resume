@@ -1,3 +1,4 @@
+#import "../../utils.typ": make-heading
 #import "../../style.typ": stylesheet
 #import "masthead.typ": render-masthead
 #import "summary.typ": render-summary
@@ -16,13 +17,25 @@
   show: style.doc.heading
 
   let layout = style.layout
+  let layout = (
+    layout
+      + (
+        h3-special: make-heading(
+          layout.tokens.h3 + (weight: 500),
+          3,
+        ),
+      )
+  )
+
   render-masthead(layout, data)
   render-summary(layout, data.summary)
   render-experience(layout, data.experience)
-  grid(
-    columns: (50%, 1fr),
-    column-gutter: 1em,
-    render-education(layout, data.education), render-clearance(layout, data.clearance),
+  block(above: layout.spacing.heading-above,
+    stack(
+      dir: ltr,
+      box(width: 60%, render-education(layout, data.education)),
+      box(width: 40%, render-clearance(layout, data.clearance)),
+    )
   )
   content
 }

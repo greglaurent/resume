@@ -2,7 +2,7 @@
   (
     company: [Abstract Machines LLC],
     location: [Reno, NV],
-    role: [Founder & Principal Consultant],
+    role: [Founder & Principal],
     start: [Nov 2023],
     end: [Current],
     summary: [Founded consulting practice focused on technical leadership and mentorship for engineering and product teams. Guide clients through technical challenges, feasibility analysis, process optimization, and product delivery.],
