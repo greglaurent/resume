@@ -1,25 +1,3 @@
-// Modular type scale. Returns (size, leading, tracking) functions keyed by integer step.
-// size(0) = 1em, size(n) = ratio^n * 1em.
-// leading(n) = size(n) × (lead-base - lead-slope × ratio^n) — inversely proportional
-//   to text size per typographic standards: ~120% for large headings, ~138% for body
-//   text, ~145% for small text. Mirrors the tracking formula.
-// tracking(n) = tracking-offset - tracking-slope × size(n) — inversely proportional
-//   to the exact computed size so larger type gets tighter tracking automatically.
-#let make-scale(
-  ratio: 1.25,
-  lead-base: 0.57,
-  lead-slope: 0.19,
-  tracking-offset: 0.09em,
-  tracking-slope: 0.05,
-) = {
-  let sz(n) = calc.pow(ratio, n) * 1em
-  (
-    size:     sz,
-    leading:  n => sz(n) * (lead-base - lead-slope * calc.pow(ratio, n)),
-    tracking: n => tracking-offset - tracking-slope * sz(n),
-  )
-}
-
 #let set-heading(body, level, numbering: none) = heading(level: level, numbering: numbering, body)
 
 #let style-text(body, cfg) = {
@@ -35,38 +13,59 @@
   if "leading" in cfg { { set par(leading: cfg.leading); result } } else { result }
 }
 
-// Typography callable factory
+// Typography callable factory. Above/below v() emitted whenever `above`/
+// `below` is present in cfg (token default OR per-call override). Per-call
+// overrides replace token defaults via dict merge. `weak`, `weak-above`,
+// `weak-below` are overrideable per call; default weak: true.
 #let make-text(token) = (body, ..ov) => {
   let cfg = token + ov.named()
+  let weak = cfg.at("weak", default: true)
+  let weak-above = cfg.at("weak-above", default: weak)
+  let weak-below = cfg.at("weak-below", default: weak)
   let content = style-text(body, cfg)
-  if "above" in cfg { v(cfg.above, weak: true) }
+  if "above" in cfg { v(cfg.above, weak: weak-above) }
   content
-  if "below" in cfg { v(cfg.below, weak: true) }
+  if "below" in cfg { v(cfg.below, weak: weak-below) }
 }
 
-// Block-level styled element — no Typst heading() node.
-// All styling and spacing owned by the token; no show rules required.
+// Block-level styled element — no Typst heading() node. Same unconditional
+// cfg-based above/below emission as make-text.
 #let make-block-heading(token) = (body, ..ov) => {
   let cfg = token + ov.named()
-  if "above" in cfg { v(cfg.above, weak: true) }
+  let weak = cfg.at("weak", default: true)
+  let weak-above = cfg.at("weak-above", default: weak)
+  let weak-below = cfg.at("weak-below", default: weak)
+  if "above" in cfg { v(cfg.above, weak: weak-above) }
   style-text(body, cfg)
-  if "below" in cfg { v(cfg.below, weak: true) }
+  if "below" in cfg { v(cfg.below, weak: weak-below) }
 }
 
+// Heading callable. Emits cfg.above as v() before the heading and cfg.below
+// after; the heading's intrinsic block is zeroed inside the inner scope so
+// the v()s are the sole source of above/below. `weak` is overrideable per
+// call — default true (collapses with adjacent par.spacing for normal
+// typographic rhythm), pass `weak: false` to force visible space at flow
+// boundaries.
+// Heading callable. Block wrap at the call site is the sole source of
+// above/below spacing — values come from cfg (token defaults, or per-call
+// overrides via ov). Inner `set block(above: 0em, below: 0em)` zeroes the
+// heading's intrinsic block so the wrap's values aren't compounded.
 #let make-heading(token, level) = (body, ..ov) => {
   let cfg = token + ov.named()
-  set-heading(style-text(body, cfg), level, numbering: cfg.numbering)
+  block(
+    above: cfg.at("above", default: 0em),
+    below: cfg.at("below", default: 0em),
+    {
+      set block(above: 0em, below: 0em)
+      heading(level: level, numbering: cfg.at("numbering", default: none), style-text(body, cfg))
+    },
+  )
 }
 
-// Sets heading block spacing at document level — must be applied once in doc setup.
-// show rules inside closures don't propagate to the layout scope; this factory
-// registers them where they are guaranteed to apply.
-#let make-doc-heading(h1, h2, h3) = (c) => {
-  show heading.where(level: 1): set block(above: h1.above, below: h1.below)
-  show heading.where(level: 2): set block(above: h2.above, below: h2.below)
-  show heading.where(level: 3): set block(above: h3.above, below: h3.below)
-  c
-}
+// Passthrough — heading block spacing is owned by make-heading's call-site
+// block wrap. Kept as a function for API compatibility (style.doc.heading is
+// consumed via `show: style.doc.heading` in apply.typ).
+#let make-doc-heading(h1, h2, h3) = (c) => c
 
 // Document rule callable factories
 #let make-doc-text(base) = (c, ..ov) => {
