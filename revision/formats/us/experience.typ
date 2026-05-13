@@ -8,7 +8,7 @@
     (layout.text-3)(leading: 0.5em, emph: true)[#entry.summary]
 
     for bullet in entry.bullets {
-      (layout.text-3)(leading: 0.5em, below: 1em)[#bullet]
+      (layout.text-3)(leading: 0.4em, below: 1em)[#bullet]
     }
   }
 }

@@ -23,7 +23,8 @@
     bullets: (
       [*Strategic Organizational Leadership:* Owned platform roadmap and drove cross-product integration strategy, working with 5 engineering managers to prioritize resources and align 60+ engineers across platform initiatives.],
       [*Platform Delivery:* Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
-      [*Operational Efficiency :* Piloted targeted cost reduction projects to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands. Improved customer data quality reports, resulting in a 40% reduction in related support.],
+      [*Operational Efficiency :* Piloted targeted cost reduction projects to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands.],
+      [*Data Quality Standards:* Improved customer data quality reports, resulting in a 40% reduction in related support.],
       [*Process & Standards Governance:* Collaborated with VP of Product to redesign product management processes, establishing company-wide standards for planning, estimation, and governance.],
     ),
   ),
@@ -35,7 +36,7 @@
     end: [May 2022],
     summary: [Senior member of a product-focused SafePoint team providing technical leadership and supporting all business critical applications.],
     bullets: (
-      [*Platform Modernization:* Modernized a critical financial platform tracking \$1B in transactions daily through research, design, and development re-architect core transaction systems.],
+      [*Platform Modernization R&D:* Modernized a critical financial platform tracking \$1B in transactions daily through research, design, and development re-architect core transaction systems.],
       [*Systems Innovation:* Designed and implemented bit-perfect, fully-recoverable synchronization between incompatible databases, removing modernization blockers.],
       [*Risk Management:* Partnered with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
       [*Process-driven Impacts:* Coordinated with internal and external stakeholders to improve customer onboarding. Customer Support increased productivity by over 60% with no staff increases.],
@@ -56,7 +57,7 @@
           [Primarily authored and provided technical product guidance on a Phase I awarded SBIR solicitation for the Naval health and wellness information ashore and afloat.],
         )],
       [*Applied Research & Commercialization:* Key developer and researcher on Phase I and II solicitations using OCR to digitize and trace schematics for safety procedures and maintenance on high-pressure systems. Research outcomes directly enabled Phase III commercialization and DoD adoption.],
-      [*R&D Team Mentorship:* Led and mentored three development teams (12 engineers total) across multiple SBIR projects, training engineers on secure systems integration and DoD software requirements.],
+      [*R&D Team Management:* Led and mentored three development teams (12 engineers total) across multiple SBIR projects, training engineers on secure systems integration and DoD software requirements.],
     ),
   ),
 )
