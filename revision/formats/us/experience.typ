@@ -5,8 +5,10 @@
 
     (layout.text-4)[#box(width: 60%)[#entry.company]#box(width: 40%)[#entry.location]]
 
-    (layout.text-3)(emph: true)[#entry.summary]
+    (layout.text-3)(leading: 0.5em, emph: true)[#entry.summary]
 
-    for bullet in entry.bullets [- #bullet]
+    for bullet in entry.bullets {
+      (layout.text-3)(leading: 0.5em, below: 1em)[#bullet]
+    }
   }
 }

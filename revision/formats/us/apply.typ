@@ -30,12 +30,10 @@
   render-masthead(layout, data)
   render-summary(layout, data.summary)
   render-experience(layout, data.experience)
-  block(above: layout.spacing.heading-above,
-    stack(
-      dir: ltr,
-      box(width: 60%, render-education(layout, data.education)),
-      box(width: 40%, render-clearance(layout, data.clearance)),
-    )
-  )
+  block(above: layout.spacing.heading-above, stack(
+    dir: ltr,
+    box(width: 60%, render-education(layout, data.education)),
+    box(width: 40%, render-clearance(layout, data.clearance)),
+  ))
   content
 }
