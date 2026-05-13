@@ -2,7 +2,7 @@
 
 #let render-masthead(layout, data) = {
   (layout.h1)(size: 2em, above: 0em, below: 0.75em)[#data.name]
-  (layout.text-4)(tracking: 0.03em, smallcaps: true, below: 0.75em)[#data.subtitle]
+  (layout.text-4)(tracking: 0.01em, smallcaps: true, below: 0.75em)[#data.subtitle]
   grid(
     columns: (1fr, 1fr, 1fr),
     align: (left, center, right),
