@@ -36,10 +36,10 @@
     end: [May 2022],
     summary: [Senior member of a product-focused SafePoint team providing technical leadership and supporting all business critical applications.],
     bullets: (
-      [*Platform Modernization R&D:* Modernized a critical financial platform tracking \$1B in transactions daily through research, design, and development re-architect core transaction systems.],
+      [*Platform Modernization R&D:* Modernized a critical financial platform tracking \$1B in transactions daily through research, design, and development to re-architect core transaction systems.],
       [*Systems Innovation:* Designed and implemented bit-perfect, fully-recoverable synchronization between incompatible databases, removing modernization blockers.],
-      [*Risk Management:* Partnered with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
       [*Process-driven Impacts:* Coordinated with internal and external stakeholders to improve customer onboarding. Customer Support increased productivity by over 60% with no staff increases.],
+      [*Risk Management:* Partnered with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
     ),
   ),
   (
