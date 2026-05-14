@@ -19,7 +19,7 @@
     role: [Product Manager],
     start: [May 2022],
     end: [Dec 2023],
-    summary: [Technical product manager for PROS B2B Data Management platform, leading modernization of company-wide data infrastructure.],
+    summary: [Technical product manager owning PROS B2B Data Management platform roadmap and company-wide data infrastructure modernization.],
     bullets: (
       [*Strategic Organizational Leadership:* Owned platform roadmap and drove cross-product integration strategy, working with 5 engineering managers to prioritize resources and align 60+ engineers across platform initiatives.],
       [*Platform Delivery:* Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
@@ -34,9 +34,9 @@
     role: [Sr. Software Engineer],
     start: [Sep 2018],
     end: [May 2022],
-    summary: [Senior member of a product-focused SafePoint team providing technical leadership and supporting all business critical applications.],
+    summary: [Senior engineer on SafePoint team (retail cash deposit validation and provisional credit platform), solely responsible for building the critical integration layer that orchestrated transaction flow between all system components.],
     bullets: (
-      [*Platform Modernization R&D:* Modernized critical financial platforms tracking \$1B in transactions daily through research, design, and development to re-architect core systems.],
+      [*Platform Modernization R&D:* Modernized critical integration layer processing \$1B daily with zero-downtime, zero-second cutover, and self-healing architecture through research-driven re-architecture.],
       [*Systems Innovation:* Designed and implemented bit-perfect, fully-recoverable synchronization between incompatible databases, removing modernization blockers.],
       [*Process-driven Impacts:* Coordinated with stakeholders to improve customer onboarding. Customer Support increased productivity by over 60% with no staff increases.],
       [*Risk Management:* Partnered with stakeholders to assess risk and draft roll-out plans with recovery; assisted with designing and building a new event-driven platform with transparent legacy system integration.],
@@ -48,7 +48,7 @@
     role: [Technical Lead],
     start: [May 2010],
     end: [Sep 2018],
-    summary: [DoD researcher focused on drafting Small Business Innovation (SBIR) proposals, rapid prototyping, and feasibility analysis.],
+    summary: [Technical lead for DoD SBIR research, leading three development teams on multiple simultaneous projects. Research directly enabled Phase III commercialization and DoD adoption.],
     bullets: (
       [*Research-based Revenue Generation:* Individually generated \$1M in revenue (2016-2018) across 3 Phase I and II SBIR awards.
         #list(
