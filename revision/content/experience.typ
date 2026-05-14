@@ -21,7 +21,7 @@
     end: [Dec 2023],
     summary: [Technical product manager owning PROS B2B Data Management platform roadmap and company-wide data infrastructure modernization.],
     bullets: (
-      [*Strategic Organizational Leadership:* Owned platform roadmap and drove cross-product integration strategy, working with 5 engineering managers to prioritize resources and align 60+ engineers across platform initiatives.],
+      [*Strategic Organizational Leadership:* Owned platform roadmap and drove cross-product integration strategy, working with platform architects and four engineering managers to prioritize resources and align 30+ personnel resources across platform initiatives.],
       [*Platform Delivery:* Led a team to turn around a multi-year, stalled project, delivering first production deployment for company-wide data platform.],
       [*Operational Efficiency :* Piloted targeted cost reduction to save 94%, \$600K/year; Track volume-based costs to improve product packaging, maintain margin as the platform expands.],
       [*Data Quality Standards:* Improved customer data quality reports, resulting in a 40% reduction in related support.],
