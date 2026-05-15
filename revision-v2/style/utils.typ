@@ -56,13 +56,15 @@
   for k in _block-spacing-keys {
     if k in f { spacing-args.insert(k, f.remove(k)) }
   }
+  let use-smallcaps = if "smallcaps" in f { f.remove("smallcaps") } else { false }
+  let b = if use-smallcaps { smallcaps(body) } else { body }
   let inner = if par-args.len() > 0 {
     [
       #set par(..par-args)
-      #text(..f, body)
+      #text(..f, b)
     ]
   } else {
-    text(..f, body)
+    text(..f, b)
   }
   if spacing-args.len() > 0 { block(..spacing-args, inner) } else { inner }
 }

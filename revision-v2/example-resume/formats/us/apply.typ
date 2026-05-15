@@ -9,11 +9,9 @@
   render-summary(l, data.summary)
   render-experience(l, data.experience)
 
-  v(0.5em)
   grid(
     columns: (3fr, 2fr),
     gutter: 1.5em,
-    render-education(l, data.education),
-    render-clearance(l, data.clearance),
+    render-education(l, data.education), render-clearance(l, data.clearance),
   )
 }

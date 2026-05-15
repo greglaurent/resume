@@ -1,7 +1,8 @@
 #let render-masthead(l, data) = {
-  (l.heading-1)(below: 1em)[#data.name]
+  v(-l.rhythm.spacing.p4)
+  (l.heading-1)(smallcaps: true, below: 1em)[#data.name]
 
-  (l.text-4)(below: 0.5em)[#smallcaps(data.subtitle)]
+  (l.text-4)(below: 0.5em)[#data.subtitle]
 
   (l.text-3)[
     #(l.icons.phone)(font: l.icons.font, solid: true) #h(0.4em) #data.phone
