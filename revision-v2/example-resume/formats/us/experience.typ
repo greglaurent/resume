@@ -4,14 +4,14 @@
     grid(
       columns: (1fr, 3fr),
       column-gutter: 1.5em,
-      row-gutter: 1em,
+      row-gutter: 1.5em,
       grid.cell(colspan: 2)[
-        #(l.heading-3)(
+        #(l.text-5)(
           below: 1em,
         )[#entry.role #h(1fr) #entry.start — #entry.end]
       ],
       {
-        (l.text-5)(below: 0.5em)[#entry.company]
+        (l.text-4)(below: 0.5em)[#entry.company]
         (l.text-3)[#entry.location]
       },
       {
@@ -28,6 +28,6 @@
         }
       ],
     )
-    v(0.5em)
+    v(0.25em)
   }
 }
