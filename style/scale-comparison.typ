@@ -1,4 +1,4 @@
-#import "style/layout.typ" as rl
+#import "layout.typ" as rl
 
 // Landscape, narrow margins → maximize horizontal room for side-by-side scales.
 #set page(paper: "us-letter", margin: 0.4in, flipped: true)
