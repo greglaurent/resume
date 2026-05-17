@@ -1,4 +1,4 @@
-#import "style/layout.typ" as layout
+#import "@local/cascade:0.1.0": layout
 #import "@preview/fontawesome:0.5.0": fa-envelope, fa-github, fa-linkedin, fa-location-dot, fa-mobile-screen-button
 
 #import "content/masthead.typ"

@@ -1,5 +1,4 @@
-#import "style/layout.typ" as layout
-#import "style/rhythm.typ" as rhythm
+#import "@local/cascade:0.1.0": layout, rhythm
 
 #let l = layout.make(
   theme: layout.theme.presets.light,
