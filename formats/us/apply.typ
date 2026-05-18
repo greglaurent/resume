@@ -17,14 +17,19 @@
   let l = layout.make(
     theme: layout.theme.presets.light,
     theme-overrides: (bg: white),
-    measure: 85,
+    measure: 66,
     base: 12pt,
+    //font: "EB Garamond",
+    fonts: (
+      body: (family: "Quattrocento Sans", size: 11.5pt),
+      heading: (family: "Quattrocento"),
+    ),
     scale: "golden-ditonic",
     page: (paper: "us-letter", numbering: none),
-    overrides: (
-      list: (tight: true),
-      enum: (tight: true),
-    ),
+    //overrides: (
+    //list: (tight: true),
+    //enum: (tight: true),
+    //),
   )
 
   let l = (
