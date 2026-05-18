@@ -1,6 +1,8 @@
-#let render-experience(l, entries) = {
+#import "../../content/experience.typ": content
+
+#let render-experience(l) = {
   (l.heading-2)(smallcaps: true, below: 1.25em)[Experience]
-  for entry in entries {
+  for entry in content {
     grid(
       columns: (1fr, 2fr),
       //column-gutter: 0em,

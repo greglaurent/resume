@@ -1,4 +1,4 @@
-#let education = (
+#let content = (
   (
     school: [Texas Tech University],
     degree: [B.B.A., Summa Cum Laude],

@@ -1,4 +1,14 @@
-#let render-masthead(l, data) = {
+#import "../../content/masthead.typ": content
+
+#let data = (
+  name: content.name.first-initial-last,
+  subtitle: content.subtitle,
+  phone: content.phone.mobile-us,
+  email: content.email.business,
+  location: content.location.city-state,
+)
+
+#let render-masthead(l) = {
   v(-l.rhythm.spacing.p4)
   (l.heading-1)(smallcaps: true, below: 1em)[#data.name]
 

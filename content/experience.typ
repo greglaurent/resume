@@ -1,4 +1,4 @@
-#let experience = (
+#let content = (
   (
     company: [Abstract Machines],
     location: [Reno, NV (Remote)],

@@ -1,12 +1,6 @@
 #import "@local/cascade:0.1.0": layout
 #import "@preview/fontawesome:0.5.0": fa-envelope, fa-github, fa-linkedin, fa-location-dot, fa-mobile-screen-button
 
-#import "../../content/masthead.typ"
-#import "../../content/summary.typ": summary
-#import "../../content/experience.typ": experience
-#import "../../content/education.typ": education
-#import "../../content/clearance.typ": clearance
-
 #import "masthead.typ": render-masthead
 #import "summary.typ": render-summary
 #import "experience.typ": render-experience
@@ -44,29 +38,29 @@
     ),
   )
 
-  let data = (
-    masthead: (
-      name: masthead.name.first-initial-last,
-      subtitle: masthead.subtitle,
-      phone: masthead.phone.mobile-us,
-      email: masthead.email.business,
-      location: masthead.location.city-state,
-    ),
-    summary: summary,
-    experience: experience,
-    education: education,
-    clearance: clearance,
-  )
+  //let data = (
+  //  masthead: (
+  //    name: masthead.name.first-initial-last,
+  //    subtitle: masthead.subtitle,
+  //    phone: masthead.phone.mobile-us,
+  //    email: masthead.email.business,
+  //    location: masthead.location.city-state,
+  //  ),
+  //  summary: summary,
+  //  experience: experience,
+  //  education: education,
+  //  clearance: clearance,
+  //)
 
   let body = {
-    render-masthead(l, data.masthead)
-    render-summary(l, data.summary)
-    render-experience(l, data.experience)
+    render-masthead(l)
+    render-summary(l)
+    render-experience(l)
 
     grid(
       columns: (3fr, 2fr),
       gutter: 1.5em,
-      render-education(l, data.education), render-clearance(l, data.clearance),
+      render-education(l), render-clearance(l),
     )
   }
 
