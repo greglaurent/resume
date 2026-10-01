@@ -35,9 +35,16 @@
       )
     })
   }
-  // One compact spacing scale: labels stay close to their content, while
-  // sections and separate jobs receive a larger visual break.
-  let gap = (label: 2pt, heading: 4pt, section: 9pt, entry: 9pt, paragraph: 0.5pt)
+  // Proportional rhythm: related labels stay close; separate achievements,
+  // headings, and jobs receive progressively stronger visual separation.
+  let unit = spec.base / 3
+  let gap = (
+    label: unit,
+    heading: 2 * unit,
+    section: 5 * unit,
+    entry: 4 * unit,
+    paragraph: 1.5 * unit,
+  )
   base + (
     gap: gap,
     markup: body => {
@@ -54,7 +61,7 @@
       above: 0pt, below: gap.label),
     text-3: role.with(0),
     text-4: label.with(1, above: 0pt, below: gap.label),
-    text-5: label.with(2, above: 0pt, below: gap.label),
+    text-5: label.with(2, above: 0pt, below: gap.heading),
     divider: (above: gap.heading, below: gap.heading) => block(
       above: above, below: below,
       line(length: 100%, stroke: 0.5pt + spec.theme.rule),
