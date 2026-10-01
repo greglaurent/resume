@@ -14,7 +14,19 @@
     measure: 66,
     // Cascade 2 uses base for the body size and ratio/n for the scale.
     base: 11.5pt,
-    // Font families and their measured metrics come from the Nix-built profile.
+    // Cascade's public font overrides: measurements from `cascade measure` on
+    // the Nix-provided Regular faces; optical profiles use sans/serif defaults.
+    avg-advance: 0.4287,
+    fonts: (
+      body: (
+        family: ("Quattrocento Sans",), x-height: 0.460,
+        leading-base: 1.3, tracking-k: 0.078, word-space: 0.28,
+      ),
+      heading: (
+        family: ("Quattrocento",), x-height: 0.459,
+        leading-base: 1.2, tracking-k: 0.078, word-space: 0.28,
+      ),
+    ),
     ratio: 1.618033988749895,
     n: 2,
     page: (paper: "us-letter", margin: 0.75in),
