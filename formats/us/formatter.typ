@@ -1,5 +1,5 @@
 #import "@local/press:0.1.0": cascade-formatter
-#import "@local/resume-typography:2.0.0" as cascade
+#import "@local/cascade:2.0.0" as cascade
 #import "@preview/fontawesome:0.5.0": fa-envelope, fa-github, fa-linkedin, fa-location-dot, fa-mobile-screen-button
 
 // Extend the shared Press/Cascade formatter with resume-specific components.

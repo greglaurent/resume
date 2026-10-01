@@ -1,5 +1,5 @@
 #let content = (
-  subtitle: [Technical Leadership #sym.bullet Platform Engineering #sym.bullet Product Strategy],
+  subtitle: [Technical Strategy #sym.bullet Applied R&D #sym.bullet Platform & Product Leadership],
   name: (
     first-last: [ Gregory Laurent ],
     first-middle-last: [ Gregory Marc Laurent ],
