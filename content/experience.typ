@@ -8,7 +8,8 @@
     summary: [Founded firm to lead clients’ technical strategy, feasibility, applied R&D, productization, and commercialization.],
     bullets: (
       [*Technical Discovery:* Developed and operationalized a technical discovery methodology combining R&D, prototyping, and product planning, enabling larger, more complex client engagements and contributing #emph[\$550K in additional revenue.]],
-      [*Technical Feasibility:* Evaluated viability and built proofs of concept for subterranean leak detection and marketing attribution, reducing commercialization risk and supporting #emph[IP and patent strategy.]],
+      [*Marketing Attribution R&D:* Researched, prototyped, and refined a client’s marketing attribution model concept; supported patent filings.],
+      [*Leak Detection Feasibility:* Helped guide designs for an early subterranean leak-detection proof of concept and estimate long-term development to market.],
       [*Product Strategy:* Owned client roadmap decisions on technical architecture, feasibility, sequencing, and investment tradeoffs, aligning strategy with commercialization goals.],
       [*Engineering & Product Leadership:* Led engineering and product decisions across engagements, aligning delivery priorities and strengthening planning and governance; trained product managers on execution and decision frameworks.],
     ),
@@ -21,7 +22,7 @@
     end: [Dec 2023],
     summary: [Owned PROS B2B Data Management strategy, roadmap, cross-product integration, and company-wide data infrastructure modernization.],
     bullets: (
-      [*Platform Leadership:* Partnered with architects and four engineering managers on platform priorities, aligning 30+ personnel across engineering, sales, product, and customer~organizations.],
+      [*Platform Leadership:* Aligned platform priorities with architects and four engineering managers across 30+ personnel in engineering, sales, product, and customer~organizations.],
       [*Platform Delivery:* Turned around a multi-year stalled data platform, leading the team to its first production deployment.],
       [*Platform Economics:* Cut total platform costs by 94%, saving approximately \$600K annually; tracked usage-based costs to guide packaging and protect margins.],
       [*Data Quality:* Improved data-quality reporting, cutting support person-hours by 40% for the same workload.],
@@ -52,8 +53,8 @@
     bullets: (
       [*SBIR Capture & Commercialization:* Individually generated \$1M in SBIR funding (2016–2018) across three Phase I/II awards. Productized a first-of-its-kind mobile application integrating Naval Fuel Depot asset management with IBM Maximo.],
       [*SBIR Proposal Development:* Primarily authored an awarded Phase I proposal and guided technical product development for Naval health information ashore and afloat; additional awarded work supported mobile tools and training for Naval galleys.],
-      [*Applied Research & Commercialization:* Developed schematic-symbol recognition, tracing, and classification algorithms and an image-processing engine for interactive canvases. Contributed research and development to Phase I/II SBIR work that ultimately enabled Phase III commercialization and DoD adoption.],
-      [*R&D Engineering Leadership:* Led and mentored 12 developers across three concurrent DoD R&D teams, training them on secure integration and DoD software requirements.],
+      [*Applied Research & Commercialization:* Developed schematic-symbol recognition, tracing, and classification algorithms and an image-processing engine for interactive canvases. This Phase I/II SBIR R&D enabled Phase III commercialization and DoD adoption.],
+      [*R&D Engineering Leadership:* Led and mentored developers across three concurrent DoD R&D teams, training them on secure integration and DoD software requirements.],
     ),
   ),
 )
